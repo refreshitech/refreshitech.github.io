@@ -1,13 +1,33 @@
-<!DOCTYPE html> 
-<html> 
-  <head> 
-    <title>*</title> 
-      <!-- Uncomment the following tag when developing on a local or intranet computer --> 
-      <!-- <meta http-equiv='X-UA-Compatible' content="IE=edge" /> --> 
-</head> 
-<body> <h1>Simple video flags example</h1>
-  <video controls="controls" autoplay="autoplay" loop="loop" > <source src="http://video.com" type="video/mp4" />
-    HTML5 video is not supported by this browser or mode </video>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-</body> 
-</html>  
+<div class="w3-content w3-section" style="max-width:500px">
+  <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p>
+
+ <a href="https://go.hotmart.com/B8569204D"> <img class="mySlides w3-animate-fading" src="https://monografis3.com.br/wp-content/uploads/2017/10/monografis-tcc-orientador.png" style="width:100%">
+ <href ="https://lojaritec.blogspot.com"> <img class="mySlides w3-animate-fading" src="https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350" style="width:100%">
+  </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+</body>
+</html>
